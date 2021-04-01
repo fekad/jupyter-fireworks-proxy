@@ -22,12 +22,11 @@ def setup_fireworks_proxy():
         if not executable:
             raise FileNotFoundError('Can not find lpad executable in $PATH')
 
-        logger.info("Fireworks command @ port:{port}")
-        return ['lpad', 'webgui', '--host', '"0.0.0.0"', '--port', str(port)]
+        logger.info(f"Fireworks command @ port:{port}")
+        return ['lpad', 'webgui', '-s', '--port', str(port)]
 
     return {
         'command': _get_command,
-        'timeout': 20,
         'port': 5000,
         'new_browser_tab': False,
         'launcher_entry': {
