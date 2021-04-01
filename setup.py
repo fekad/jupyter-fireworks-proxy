@@ -28,6 +28,6 @@ setuptools.setup(
         ]
     },
     package_data={
-        'jupyter_fireworks_proxy': ['icons/: rocket.svg'],
+        'jupyter_fireworks_proxy': ['icons/fireworks.svg'],
     },
 )
