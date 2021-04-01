@@ -63,6 +63,3 @@ jupyter lab build
 
 - [`jupyter-server-proxy`](https://github.com/jupyterhub/jupyter-server-proxy)
 
-## License
-
-BSD 3-Clause

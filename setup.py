@@ -24,10 +24,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'fireworks = jupyter_fireworks_proxy:setup_fireworks',
+            'fireworks = jupyter_fireworks_proxy:setup_fireworks_proxy',
         ]
     },
     package_data={
-        'jupyter_fireworks_proxy': ['icons/example: foo.svg'],
+        'jupyter_fireworks_proxy': ['icons/: rocket.svg'],
     },
 )
