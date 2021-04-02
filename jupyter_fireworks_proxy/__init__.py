@@ -22,7 +22,7 @@ def setup_fireworks_proxy():
             raise FileNotFoundError('Can not find lpad executable in $PATH')
 
         logger.info(f"Fireworks command @ port: {port}, base_url: {base_url}")
-        return ['fireworks_launcher', '--port', str(port), '--base_url', base_url]
+        return ['fireworks_launcher', '--port', str(port), '--base_url', base_url + 'fireworks']
 
     def _get_env(port, base_url):
         return {}
@@ -31,6 +31,7 @@ def setup_fireworks_proxy():
     return {
         'command': _get_command,
         'environment': _get_env,
+        'absolute_url': True,
         # 'port': 5000,
         # 'timeout': 20,
         'new_browser_tab': True,

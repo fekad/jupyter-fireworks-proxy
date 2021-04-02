@@ -1,4 +1,6 @@
 import argparse
+from pathlib import Path
+
 from fireworks import LaunchPad
 from fireworks.flask_site.app import app
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
@@ -27,8 +29,9 @@ def fireworks_launcher(port, base_url):
         }
     )
 
-    app.lp = LaunchPad()
-    app.run(port=port, debug=False, threaded=False)
+    configfile = str(Path.home() / '.fireworks' / 'my_launchpad.yaml')
+    app.lp = LaunchPad.from_file(configfile)
+    app.run(host='0.0.0.0', port=port, debug=False, threaded=False)
 
 if __name__ == '__main__':
     fireworks_launcher(port=5000, base_url='/fireworks')
