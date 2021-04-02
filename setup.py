@@ -23,6 +23,9 @@ setuptools.setup(
         'jupyter-server-proxy>=1.5.0'
     ],
     entry_points={
+        'console_scripts': [
+            'fireworks_launcher=jupyter_fireworks_proxy.launcher:main'
+        ],
         'jupyter_serverproxy_servers': [
             'fireworks = jupyter_fireworks_proxy:setup_fireworks_proxy',
         ]
