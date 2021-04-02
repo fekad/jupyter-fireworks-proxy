@@ -34,7 +34,7 @@ def setup_fireworks_proxy():
         'absolute_url': True,
         # 'port': 5000,
         # 'timeout': 20,
-        'new_browser_tab': True,
+        'new_browser_tab': False,
         'launcher_entry': {
             'title': 'Fireworks (webgui)',
             'icon_path': _get_icon_path()
