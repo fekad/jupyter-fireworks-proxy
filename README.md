@@ -17,7 +17,7 @@ This package also contains a `fireworks_luancher` command which is also used int
 ### Install jupyter-fireworks-proxy
 
 ```bash
-pip install git+https://github.com/fekad/jupyter-fireworks-proxy.git
+pip install git+https://github.com/modl-uclouvain/jupyter-fireworks-proxy.git
 ```
 
 ### Enable jupyter-fireworks-proxy Extensions
