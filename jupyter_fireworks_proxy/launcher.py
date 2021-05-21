@@ -29,8 +29,7 @@ def fireworks_launcher(port, base_url):
         }
     )
 
-    configfile = str(Path.home() / '.fireworks' / 'my_launchpad.yaml')
-    app.lp = LaunchPad.from_file(configfile)
+    app.lp = LaunchPad.auto_load()
     app.run(host='0.0.0.0', port=port, debug=False, threaded=False)
 
 if __name__ == '__main__':
