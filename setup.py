@@ -10,8 +10,8 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name="jupyter-fireworks-proxy",
-    version='0.1.0',
-    url="https://github.com/fekad/jupyter-fireworks-proxy",
+    version='2021.5.0',
+    url="https://github.com/modl-uclouvain/jupyter-fireworks-proxy",
     author="Adam Fekete",
     description="adam@fekete.co.uk",
     long_description=long_description,
