@@ -20,7 +20,8 @@ setuptools.setup(
 	keywords=['jupyter', 'Fireworks proxy', 'jupyterhub'],
 	classifiers=['Framework :: Jupyter'],
     install_requires=[
-        'jupyter-server-proxy>=1.5.0'
+        'jupyter-server-proxy>=1.5.0',
+	'Fireworks'
     ],
     entry_points={
         'console_scripts': [
