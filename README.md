@@ -1,5 +1,7 @@
 # jupyter-fireworks-proxy
 
+Note: This package has depricated/archived because the of the lack of interest to approve the necessary changes for to the fireworks package.
+
 This package provides an easy way to launch the [webgui](https://materialsproject.github.io/fireworks/basesite_tutorial.html) interface of [Fireworks](https://materialsproject.github.io/fireworks/) in a Jupyter notebook environment. Please note that the Fireworks python must be fully configured.
 
 
